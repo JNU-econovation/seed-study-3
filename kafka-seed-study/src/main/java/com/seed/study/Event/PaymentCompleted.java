@@ -1,14 +1,17 @@
 package com.seed.study.Event;
 
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Component;
+
 import java.util.Date;
 
+@Component
+@AllArgsConstructor
+@NoArgsConstructor
 public class PaymentCompleted {
-    private final Long paymentId;
-    private final Date completionDate;
+    public Long paymentId;
+    public Date completionDate;
     // other fields as needed
-
-    public PaymentCompleted(Long paymentId, Date completionDate) {
-        this.paymentId = paymentId;
-        this.completionDate = completionDate;
-    }
 }

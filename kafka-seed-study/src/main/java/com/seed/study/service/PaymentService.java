@@ -17,18 +17,11 @@ import java.util.Date;
 public class PaymentService {
     private final PaymentEventPublisher eventPublisher;
     private final PaymentRepository paymentRepository;
-
     public void completePayment(Long paymentId) {
         Payment payment = paymentRepository.findById(paymentId).orElseThrow(() -> new IllegalArgumentException("존재하지 않는 개체입니다"));
-        payment.setStatus(PaymentStatus.COMPLETED);
+        payment.setPaymentStatus(PaymentStatus.COMPLETED);
         paymentRepository.save(payment);
         PaymentCompleted paymentCompletedEvent = new PaymentCompleted(payment.getId(), new Date());
         eventPublisher.publishEvent(paymentCompletedEvent);
-    }
-    @Transactional
-    public void processTransaction(Transaction transaction) {
-        Payment payment = transaction.getPayment();
-        payment.setStatus(PaymentStatus.COMPLETED);
-        paymentRepository.save(payment);
     }
 }

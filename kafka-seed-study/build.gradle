@@ -34,6 +34,9 @@ dependencies {
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testImplementation 'org.springframework.integration:spring-integration-test'
     testImplementation 'org.springframework.kafka:spring-kafka-test'
+    implementation 'com.mysql:mysql-connector-j:8.0.31'
+    runtimeOnly 'mysql:mysql-connector-java'
+
 }
 
 tasks.named('test') {

@@ -1,20 +1,22 @@
 package com.seed.study.domain;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.hibernate.annotations.Entity;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
-@Getter
 @Entity
+@Getter
 @Setter
+@AllArgsConstructor
+@NoArgsConstructor
 public class Payment {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private PaymentStatus status;
+    @Enumerated(EnumType.STRING)
+    private PaymentStatus paymentStatus;
 }
