@@ -1,6 +1,11 @@
 # Compiled class file
 *.class
-
+./kafka-producer-example/.idea
+.idea
+*/.idea
+*.idea
+.DS_Store
+*/.DS_Store
 # Log file
 *.log
 
