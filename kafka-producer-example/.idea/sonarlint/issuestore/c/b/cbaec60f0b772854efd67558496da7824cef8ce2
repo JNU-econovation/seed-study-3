@@ -1,0 +1,9 @@
+
+ˆ
+java:S1319""mThe return type of this method should be an interface such as "Map" rather than the implementation "HashMap".(þÔ˜ˆùÿÿÿÿ
+—
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ŠðÐ°
+Q	java:S125"<This block of commented-out lines of code should be removed.(ª˜ôê
+h	java:S100""NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(þÔ˜ˆùÿÿÿÿ
+V	java:S125/"<This block of commented-out lines of code should be removed.(´Ý•þÿÿÿÿ
+S	java:S106@"9Replace this use of System.out or System.err by a logger.(¥¨÷Òùÿÿÿÿ

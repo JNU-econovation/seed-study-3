@@ -1,0 +1,10 @@
+
+t
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(Á¼úôøÿÿÿÿ
+V	java:S125"<This block of commented-out lines of code should be removed.(Óä±’üÿÿÿÿ
+W
+java:S3457#"AFormat specifiers should be used instead of string concatenation.(ùÐÿù
+V
+java:S3457("AFormat specifiers should be used instead of string concatenation.(Ž¼æ>
+t
+java:S2142."^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ä ¹€
